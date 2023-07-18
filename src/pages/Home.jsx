@@ -6,6 +6,8 @@ import heroImg3 from "/images/hero-img03.png";
 import icon1 from "/images/icon01.png";
 import icon2 from "/images/icon02.png";
 import icon3 from "/images/icon03.png";
+import About from "../components/About/About";
+import ServiceList from "../components/Services/ServiceList";
 
 const Home = () => {
   return (
@@ -21,10 +23,12 @@ const Home = () => {
                   We help patients live a healthy, longer life.
                 </h1>
                 <p className="text__paragraph">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores harum sapiente mollitia molestiae debitis asperiores
-                  impedit delectus modi consequatur est veniam soluta, fugit
-                  ullam blanditiis alias dolores nemo dicta quia?
+                  For 30 years in a row, Indian News & World Report has
+                  recognized us as one of the best public hospitals in the
+                  nation and #1 in Bangalore. We are serving our best and
+                  maintaining our current standards.we are constantly striving
+                  to improve our facilities and services to meet the
+                  ever-changing needs of our patients and community.
                 </p>
 
                 <button className="btn">Request an Appointment</button>
@@ -117,7 +121,7 @@ const Home = () => {
               </div>
               <div className="mt-[30px]">
                 <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">
-                  Find a Clinic
+                  Find a Location
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
                   World class care for everyone. Our health system offers
@@ -157,6 +161,26 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <About />
+
+      {/* ============= Services Section Starts================== */}
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">Our Medical Services</h2>
+            <p className="text__paragraph text-center">
+              World class care for everyone. Our health system offers unmatched,
+              expert health care.
+            </p>
+          </div>
+
+          <ServiceList />
+        </div>
+      </section>
+      {/* ============= Services Section Ends================== */}
+
+      
     </>
   );
 };
