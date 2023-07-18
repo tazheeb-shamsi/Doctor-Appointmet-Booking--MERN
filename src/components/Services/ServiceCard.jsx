@@ -6,7 +6,7 @@ const ServiceCard = (item) => {
 
   return (
     <div
-      className="py-[30px] px-3 lg:px-5 border border-r-2 border-b-2 rounded-lg"
+      className="py-[30px] px-3 lg:px-5 border shadow-lg rounded-lg"
       key={item.id}
     >
       <h2 className="text-[26px] leading-9 text-headingColor font-[700] ">
